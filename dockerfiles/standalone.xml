@@ -36,9 +36,6 @@
         <extension module="org.wildfly.extension.security.manager"/>
         <extension module="org.wildfly.extension.undertow"/>
     </extensions>
-    <system-properties>       
-        <property name="COUNTRY_MEMBER_PATH" value="${jboss.server.config.dir}/${env.COUNTRY}"/>
-    </system-properties>
     <management>
         <security-realms>
             <security-realm name="ManagementRealm">
