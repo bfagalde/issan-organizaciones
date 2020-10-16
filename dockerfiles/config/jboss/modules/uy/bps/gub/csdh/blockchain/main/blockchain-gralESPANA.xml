@@ -1,0 +1,5 @@
+<config>	
+		<org_sender>es-inss</org_sender>
+		<org_receiver>uy-bps</org_receiver>
+		<msgtype>DDM</msgtype>	
+</config>

@@ -1,0 +1,39 @@
+{
+    "name": "es-inssprofile",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "es-inss"
+    },
+    "organizations": {
+        "es-inss": {
+            "mspid": "es-inss",
+            "certificateAuthorities": [
+                "issan-test-cainss-ca.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud:443"
+            ],
+            "peers": [
+                "issan-test-peerinss-peer.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud:443"
+            ]
+        }
+    },
+    "peers": {
+        "issan-test-peerinss-peer.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud:443": {
+            "url": "grpcs://issan-test-peerinss-peer.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud:443",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIIB/jCCAaSgAwIBAgIUaq5+d44qyJgKTplj/XT+RgU/l08wCgYIKoZIzj0EAwIw\nXTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMQ4wDAYDVQQDEwV0bHNjYTAe\nFw0yMDA2MTYxMzA3MDBaFw0zNTA2MTMxMzA3MDBaMF0xCzAJBgNVBAYTAlVTMRcw\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRnZXIxDzAN\nBgNVBAsTBkZhYnJpYzEOMAwGA1UEAxMFdGxzY2EwWTATBgcqhkjOPQIBBggqhkjO\nPQMBBwNCAARcWxlQ51HdHkJgGUBNO4b9WhX0f8DOsUvEfmtV1PodIgCsnDx0yM0U\neMHNnBSsrdbs+oAIn5/HIWFGKBd+XqDfo0IwQDAOBgNVHQ8BAf8EBAMCAQYwDwYD\nVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUuoRE/bF/j+VNtc4xScZyGI94DFEwCgYI\nKoZIzj0EAwIDSAAwRQIhAMEI9hoX3oP7V9H3LEp6u6Hoz7XrhnLjdlfFkSkD9sjc\nAiBOhyBzTzceHBqnS3O9jPUNA/ZDHcERr70BGKWglWRjhg==\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "issan-test-peerinss-peer.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "issan-test-cainss-ca.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud:443": {
+            "url": "https://issan-test-cainss-ca.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud:443",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIIDnDCCA0OgAwIBAgIRALtOvVBPhAM5BmHkNw9ysYEwCgYIKoZIzj0EAwIwgdIx\nCzAJBgNVBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEPMA0GA1UEBxMG\nRHVyaGFtMQwwCgYDVQQKEwNJQk0xEzARBgNVBAsTCkJsb2NrY2hhaW4xdjB0BgNV\nBAMTbWlzc2FuLXRlc3QtY2FpbnNzLWNhLmJwcy0xNTgwNDEyNTczNTA5LWY3MmVm\nMTFmM2FiMDg5YThjNjc3MDQ0ZWIyODI5MmNkLTAwMDEuZXUtZGUuY29udGFpbmVy\ncy5hcHBkb21haW4uY2xvdWQwHhcNMjAwNjE2MTMxMjE2WhcNMzAwNjE0MTMxMjE2\nWjCB0jELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMQ8wDQYD\nVQQHEwZEdXJoYW0xDDAKBgNVBAoTA0lCTTETMBEGA1UECxMKQmxvY2tjaGFpbjF2\nMHQGA1UEAxNtaXNzYW4tdGVzdC1jYWluc3MtY2EuYnBzLTE1ODA0MTI1NzM1MDkt\nZjcyZWYxMWYzYWIwODlhOGM2NzcwNDRlYjI4MjkyY2QtMDAwMS5ldS1kZS5jb250\nYWluZXJzLmFwcGRvbWFpbi5jbG91ZDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IA\nBImN8wd0lH38XafA8sOLH/xrxAnOk/VoRd0CzNUud2OLYi8zIkIku+sp2hPr6UnP\n2UoG7YsOpSbUPl21/bTzjSOjgfcwgfQwgfEGA1UdEQSB6TCB5oJtaXNzYW4tdGVz\ndC1jYWluc3MtY2EuYnBzLTE1ODA0MTI1NzM1MDktZjcyZWYxMWYzYWIwODlhOGM2\nNzcwNDRlYjI4MjkyY2QtMDAwMS5ldS1kZS5jb250YWluZXJzLmFwcGRvbWFpbi5j\nbG91ZIJ1aXNzYW4tdGVzdC1jYWluc3Mtb3BlcmF0aW9ucy5icHMtMTU4MDQxMjU3\nMzUwOS1mNzJlZjExZjNhYjA4OWE4YzY3NzA0NGViMjgyOTJjZC0wMDAxLmV1LWRl\nLmNvbnRhaW5lcnMuYXBwZG9tYWluLmNsb3VkMAoGCCqGSM49BAMCA0cAMEQCIHfx\nqIgQF8xgE2zK9p+oZAzLrn6rsRXVUF2CP81kLiVjAiAIlsN4dsuvKCDb+ySbTQEt\nUNNt2JFewRAoiOXx0p9FFw==\n-----END CERTIFICATE-----\n"
+            }
+        }
+    }
+}
