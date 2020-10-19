@@ -10,6 +10,9 @@ C:\>oc new-app --name bps https://github.com/bfagalde/issan-organizaciones#prueb
 
 2 - modificar la ruta para hacera ssl.
 
+por ultimo...
+https://bps-bfagalde-uy.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud/upload-site/
+
 -----------------
 C:\data\git\bps\git-hub\issan-organizaciones\dockerfiles>oc logs -f bc/uy-bps-client
 Cloning "https://github.com/bfagalde/issan-organizaciones" ...
