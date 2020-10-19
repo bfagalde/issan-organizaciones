@@ -3,8 +3,14 @@ Cambie lo siguiente:
 * Sacque la variable del standalone.xml y la meti al moenmnto de crear la aplicacion en openshift.
 * Para poder acceder con diferentes host cambien en el standalone xml el inet (jboss.bind.address.management=0.0.0.0 ??? -Djboss.bind.address=0.0.0.0 ???)
 
+1 - crear la aplicacion
 C:\>oc new-app --name bps https://github.com/bfagalde/issan-organizaciones#prueba1_env --context-dir dockerfiles -e COUNTRY_MEMBER_PATH=/opt/eap/standalone/configuration/URUGUAY
 
+2 - crear la ruta "oc expose svc/bps"
+
+2 - modificar la ruta para hacera ssl.
+
+-----------------
 C:\data\git\bps\git-hub\issan-organizaciones\dockerfiles>oc logs -f bc/uy-bps-client
 Cloning "https://github.com/bfagalde/issan-organizaciones" ...
         Commit: beecf6348c2ca70d53244a756a62bea5c673f9f6 (habilitando multiples host)
