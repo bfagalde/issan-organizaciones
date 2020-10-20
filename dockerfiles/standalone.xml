@@ -119,6 +119,18 @@
             <logger category="sun.rmi">
                 <level name="WARN"/>
             </logger>
+            <logger category="org.jboss">
+                <level name="INFO"/>
+            </logger>
+            <logger category="javax.enterprise">
+                <level name="INFO"/>
+            </logger>
+            <logger category="org.apache">
+                <level name="INFO"/>
+            </logger>
+            <logger category="org.hibernate">
+                <level name="INFO"/>
+            </logger>
             <root-logger>
                 <level name="INFO"/>
                 <handlers>
