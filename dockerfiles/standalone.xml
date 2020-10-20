@@ -123,6 +123,9 @@
 	<logger category="org.jboss">
                 <level name="INFO"/>
             </logger>
+	<logger category="org.infinispan">
+                <level name="INFO"/>
+            </logger>
             <logger category="javax.enterprise">
                 <level name="INFO"/>
             </logger>
