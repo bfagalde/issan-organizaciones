@@ -4,7 +4,8 @@ Cambie lo siguiente:
 * Para poder acceder con diferentes host cambien en el standalone xml el inet (jboss.bind.address.management=0.0.0.0 ??? -Djboss.bind.address=0.0.0.0 ???)
 
 1 - crear la aplicacion
-C:\>oc new-app --name bps https://github.com/bfagalde/issan-organizaciones#prueba1_env --context-dir dockerfiles -e COUNTRY_MEMBER_PATH=/opt/eap/standalone/configuration/URUGUAY
+C:>oc new-app --name bps https://github.com/bfagalde/issan-organizaciones#prueba1_env --context-dir dockerfiles -e COUNTRY_MEMBER_PATH=/opt/eap/standalone/configuration/URUGUAY
+C:>oc new-app --name bps https://github.com/bfagalde/issan-organizaciones#prueba1_env --context-dir dockerfiles -e COUNTRY_MEMBER_PATH=/opt/eap/standalone/configuration/URUGUAY -e COUNTRY=URUGUAY -e JBOSS_HOME=/opt/eap/
 
 2 - crear la ruta "oc expose svc/bps"
 
