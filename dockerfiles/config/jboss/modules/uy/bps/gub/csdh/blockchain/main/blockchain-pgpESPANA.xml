@@ -2,8 +2,8 @@
 		<hash>MD5</hash>
 		<sender>lugalusso@bps.gub.uy</sender>
 		<recipent>lugalusso@bps.gub.uy</recipent>
-		<pub_key>${env:JBOSS_HOME}\\standalone\\configuration\\Luis_Galusso_0x927412E2_public.asc</pub_key>
-		<priv_key>${env:JBOSS_HOME}\\standalone\\configuration\\Luis_Galusso_0x927412E2_SECRET.asc</priv_key>
+		<pub_key>${env:JBOSS_HOME}/standalone/configuration/Luis_Galusso_0x927412E2_public.asc</pub_key>
+		<priv_key>${env:JBOSS_HOME}/standalone/configuration/Luis_Galusso_0x927412E2_SECRET.asc</priv_key>
 		<priv_key_pass>Contrasena1</priv_key_pass>
 		<file_extension>.gpg</file_extension>			
 </config>
