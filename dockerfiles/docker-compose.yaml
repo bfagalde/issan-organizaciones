@@ -2,13 +2,13 @@ version: '3.4'
 
 services:  
   uruguay:    
-    image: upload-site:latest
+    image: upload-site
     environment:    
       - COUNTRY=URUGUAY 
     ports:
       - "8080:8080" 
   espana:    
-    image: upload-site:latest
+    image: upload-site
     environment:    
       - COUNTRY=ESPANA   
     ports:

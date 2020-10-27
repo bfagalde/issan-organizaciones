@@ -1,3 +1,4 @@
+# docker login nexus.bps.net:5000
 #FROM nexus.bps.net:5000/redhat.io/jboss-eap-7/eap72-openshift:latest
 FROM registry.access.redhat.com/jboss-eap-7/eap72-openshift
 
@@ -8,7 +9,7 @@ COPY config/jboss/modules/uy $JBOSS_HOME/modules/uy
 COPY Luis_Galusso_0x927412E2_public.asc $JBOSS_HOME/standalone/configuration
 COPY Luis_Galusso_0x927412E2_SECRET.asc $JBOSS_HOME/standalone/configuration
 
-# definir variable de entorno COUNTRY con valor URUGUAY o ESPAÑA
+# definir variable de entorno COUNTRY con valor URUGUAY o ESPAÃ‘A
 COPY standalone.xml $JBOSS_HOME/standalone/configuration/standalone-openshift.xml
 
 COPY config/issan-gateway/ESPANA $JBOSS_HOME/standalone/configuration/ESPANA
