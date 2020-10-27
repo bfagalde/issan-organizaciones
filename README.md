@@ -11,10 +11,11 @@ C:>oc new-app --name bps https://github.com/bfagalde/issan-organizaciones#prueba
 
 3 - modificar la ruta para hacera ssl.
 
+2 y 3, pueden resumirse en "oc create route edge inss2 --service=inss"
+
 por ultimo...
 https://bps-bfagalde-uy.bps-1580412573509-f72ef11f3ab089a8c677044eb28292cd-0001.eu-de.containers.appdomain.cloud/upload-site/
 
-..
 Luego ante un commit nuevo en la bracnh, se debe ejecutar "oc start-build bps"
 -----------------
 C:\data\git\bps\git-hub\issan-organizaciones\dockerfiles>oc logs -f bc/uy-bps-client
